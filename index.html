@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud_Computing | Presentación</title>
+    <style>
+      :root {
+        --bg-dark: #0b1020;
+        --bg-card: rgba(17, 24, 39, 0.78);
+        --primary: #5eead4;
+        --secondary: #7c3aed;
+        --text: #e5eefb;
+        --muted: #b7c4dc;
+        --accent: #38bdf8;
+        --border: rgba(148, 163, 184, 0.22);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          linear-gradient(135deg, rgba(124, 58, 237, 0.14), rgba(56, 189, 248, 0.12)),
+          radial-gradient(circle at top, rgba(94, 234, 212, 0.18), transparent 35%),
+          var(--bg-dark);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+
+      .container {
+        width: min(1100px, 100%);
+        background: rgba(15, 23, 42, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 25px 80px rgba(15, 23, 42, 0.6);
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: 56px 48px 32px;
+        background: linear-gradient(135deg, rgba(94, 234, 212, 0.08), rgba(124, 58, 237, 0.12));
+        border-bottom: 1px solid var(--border);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--primary);
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.3rem, 5vw, 4.5rem);
+        line-height: 1.1;
+      }
+
+      .subtitle {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .content {
+        padding: 28px 48px 48px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 22px;
+      }
+
+      .card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 24px 22px;
+        min-height: 170px;
+      }
+
+      .card h2 {
+        margin: 0 0 16px;
+        font-size: 1.05rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+
+      .card p,
+      .card li {
+        color: var(--text);
+        font-size: 1rem;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      .card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .card li + li {
+        margin-top: 8px;
+      }
+
+      .card strong {
+        color: var(--accent);
+      }
+
+      .footer {
+        text-align: center;
+        padding: 0 0 28px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 18px;
+        }
+
+        .hero,
+        .content {
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Cloud_Computing</p>
+        <h1>Presentación del equipo</h1>
+        <p class="subtitle">Proyecto académico de computación en la nube</p>
+      </header>
+
+      <section class="content">
+        <div class="cards">
+          <article class="card">
+            <h2>Equipo</h2>
+            <ul>
+              <li>Cristian Caballero</li>
+              <li>Ana Mariñelarena</li>
+              <li>Adrian Romero</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h2>Institución</h2>
+            <p><strong>Universidad / Instituto</strong></p>
+            <p>Instituto Tecnologico de Chihuahua 2</p>
+          </article>
+
+          <article class="card">
+            <h2>Materia</h2>
+            <p>Cloud Computing</p>
+          </article>
+
+          <article class="card">
+            <h2>Maestro</h2>
+            <p>Juana García Seañez</p>
+          </article>
+
+          <article class="card">
+            <h2>Fecha</h2>
+            <p>04 de septiembre de 2026</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="footer">Cloud_Computing Team • 2026</div>
+    </main>
+  </body>
+</html>
